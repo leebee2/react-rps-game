@@ -5,15 +5,15 @@ import { useState } from "react";
 const choise = {
   rock: {
     name: "Rock",
-    img: "/img/rock.png"
+    img: "./img/rock.png"
   },
   scissor: {
     name: "Scissor",
-    img: "/img/scissor.png"
+    img: "./img/scissor.png"
   },
   paper: {
     name: "Paper",
-    img: "/img/paper.png"
+    img: "./img/paper.png"
   },
 }
 
