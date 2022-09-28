@@ -5,15 +5,15 @@ import { useState } from "react";
 const choise = {
   rock: {
     name: "Rock",
-    img: "./img/rock.png"
+    img: process.env.PUBLIC_URL + "/img/rock.png"
   },
   scissor: {
     name: "Scissor",
-    img: "./img/scissor.png"
+    img: process.env.PUBLIC_URL + "/img/scissor.png"
   },
   paper: {
     name: "Paper",
-    img: "./img/paper.png"
+    img: process.env.PUBLIC_URL + "/img/paper.png"
   },
 }
 
@@ -38,14 +38,14 @@ function App() {
   }
 
   const judgement = (user, computer) => {
-    if (user == computer) {
+    if (user === computer) {
       return "비김"
-    } else if (user == "Rock") {
-      return computer == "Scissor" ? "승리" : "패배"
-    } else if (user == "Scissor") {
-      return computer == "Paper" ? "승리" : "패배"
+    } else if (user === "Rock") {
+      return computer === "Scissor" ? "승리" : "패배"
+    } else if (user === "Scissor") {
+      return computer === "Paper" ? "승리" : "패배"
     } else {
-      return computer == "Rock" ? "승리" : "패배"
+      return computer === "Rock" ? "승리" : "패배"
     }
   }
 
@@ -57,9 +57,9 @@ function App() {
       </div>
       <h3>하나를 선택해주세요.</h3>
       <div className="main">
-        <img src="/img/scissor.png" className="button" onClick={() => playerClick('scissor')} />
-        <img src="/img/rock.png" className="button" onClick={() => playerClick('rock')} />
-        <img src="/img/paper.png" className="button" onClick={() => playerClick('paper')} />
+        <img src={process.env.PUBLIC_URL + "/img/scissor.png"} className="button" onClick={() => playerClick('scissor')} />
+        <img src={process.env.PUBLIC_URL + "/img/rock.png"} className="button" onClick={() => playerClick('rock')} />
+        <img src={process.env.PUBLIC_URL + "/img/paper.png"} className="button" onClick={() => playerClick('paper')} />
       </div>
     </div>
   );
