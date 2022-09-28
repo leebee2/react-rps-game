@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/react-rps-game/static/css/main.5506d8a5.css",
+    "main.js": "/react-rps-game/static/js/main.ffc97c7c.js",
+    "static/js/787.b16667de.chunk.js": "/react-rps-game/static/js/787.b16667de.chunk.js",
+    "index.html": "/react-rps-game/index.html",
+    "main.5506d8a5.css.map": "/react-rps-game/static/css/main.5506d8a5.css.map",
+    "main.ffc97c7c.js.map": "/react-rps-game/static/js/main.ffc97c7c.js.map",
+    "787.b16667de.chunk.js.map": "/react-rps-game/static/js/787.b16667de.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5506d8a5.css",
+    "static/js/main.ffc97c7c.js"
+  ]
+}
